@@ -4,7 +4,7 @@ set -euo pipefail
 
 target=${1:-build}
 
-case "$1" in
+case "$target" in
   --verbose|-v) set -x && target=${2:-build} ;;
 esac
 

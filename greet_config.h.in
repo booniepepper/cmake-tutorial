@@ -1,0 +1,4 @@
+// This gets preprocessed by CMake
+#define Greet_VERSION_MAJOR @Greet_VERSION_MAJOR@
+#define Greet_VERSION_MINOR @Greet_VERSION_MINOR@
+

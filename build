@@ -1,0 +1,34 @@
+#!/bin/bash
+
+set -euo pipefail
+
+target=${1:-build}
+
+case "$1" in
+  --verbose|-v) set -x && target=${2:-build} ;;
+esac
+
+out_dir="$PWD/out"
+
+build() {
+  mkdir -p "$out_dir"
+  cd "$out_dir"
+  cmake ..
+  cmake --build .
+}
+
+clean() {
+  rm -rf "$out_dir"
+}
+
+help() {
+  echo "Usage: build [-v|--verbose] [build|clean|help]"
+}
+
+case "$target" in
+  build) build ;;
+  clean) clean ;;
+  help ) help ;;
+  *    ) >&2 help && exit 1 ;;
+esac
+

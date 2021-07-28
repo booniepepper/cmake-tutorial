@@ -5,9 +5,9 @@ This is me going through this CMake tutorial:
 Steps:
 
 - [x] Step 1: A Basic Starting Point
-  - [ ] Adding a Version Number and Configured Header File
-  - [ ] Specify the C++ Standard
-  - [ ] Build and Test
+  - [x] Adding a Version Number and Configured Header File
+  - [x] Specify the C++ Standard
+  - [x] Build and Test
 - [ ] Step 2: Adding a Library
 - [ ] Step 3: Adding Usage Requirements for a Library
 - [ ] Step 4: Installing and Testing
